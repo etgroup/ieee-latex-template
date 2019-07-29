@@ -3,6 +3,7 @@
 ## 说明
 
 在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。
+使用该模板时，可通过Github的fork功能，或直接复制本repo。
 
 <span>
 <!-- LaTeX Logo -->
@@ -33,14 +34,13 @@ I you use Atom (that is my case) the following ones are available:
 ## Usage
 To use this template, you can simply fork or copy this repository and start working on it.
 
-## 使用
-使用该模板时，可通过Github的fork功能，或直接复制本repo。
 
-### Starting your Article
+
+### Starting your Article -- 开始撰写论文
 The first thing that you need to do is to update the article's title and author information at the ```variables.tex```
 file.
 
-## 开始撰写论文
+
 修改文件"variable.tex"中的内容，如下：
 
 ```latex
@@ -63,8 +63,8 @@ file by defining new variables and updating the respective commands. The informa
 have multiple authors/institutions is available at ``IEEEtran_HOWTO.pdf``.
 
 
-### 内容
-以下，可通过编辑相关文件修改摘要、关键词和正文。
+
+%以下，可通过编辑相关文件修改摘要、关键词和正文。
 
 ### Abstract
 The file for the article abstract are located in  ```abstract/abstract.tex```. To define your abstract
@@ -141,8 +141,8 @@ The full documentation of the ```acronyms``` package is available at [LaTeX Glos
 
 
 
-## Compile
 ## 编译
+
 
 You have some ways to create the final pdf:
 
@@ -151,9 +151,9 @@ It depends on the text editor you are using.
 If you are using Atom and the LaTeX plugin, just press
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
 
-### Using the provided scripts
 ### 使用脚本
-脚本是一种高效的工作方式，化繁为简。
+脚本是一种高效的工作方式，化繁为简。在Windsows下，需要安装git软件（https://gitforwindows.org/），直接双击即可运行。
+建议：每次在提交（commit）前，运行一次toPDF.sh 和 clean.sh。
 
 If you have the complete LateX environment installed, you can run the ```toPDF.sh``` script to generate the PDF (```article.pdf```):
 ```
