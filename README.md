@@ -1,9 +1,9 @@
 # IEEE-article-latex-template
 
-## ËµÃ÷
+## è¯´æ˜
 
-ÔÚGithubÉÏÅ¼È»·¢ÏÖµÄÒ»¸öIEEEÄ£°å£¬Ê¹ÓÃ·½±ã£¬Ôİ¶¨ÎªÊµÑéÊÒÍ¨ÓÃµÄÂÛÎÄÄ£°å¡£
-Ê¹ÓÃ¸ÃÄ£°åÊ±£¬¿ÉÍ¨¹ıGithubµÄfork¹¦ÄÜ£¬»òÖ±½Ó¸´ÖÆ±¾repo¡£
+**åœ¨Githubä¸Šå¶ç„¶å‘ç°çš„ä¸€ä¸ªIEEEæ¨¡æ¿ï¼Œä½¿ç”¨æ–¹ä¾¿ï¼Œæš‚å®šä¸ºå®éªŒå®¤é€šç”¨çš„è®ºæ–‡æ¨¡æ¿ã€‚
+ä½¿ç”¨è¯¥æ¨¡æ¿æ—¶ï¼Œå¯é€šè¿‡Githubçš„forkåŠŸèƒ½ï¼Œæˆ–ç›´æ¥å¤åˆ¶æœ¬repoã€‚
 
 <span>
 <!-- LaTeX Logo -->
@@ -36,12 +36,12 @@ To use this template, you can simply fork or copy this repository and start work
 
 
 
-### Starting your Article -- ¿ªÊ¼×«Ğ´ÂÛÎÄ
+### Starting your Article -- å¼€å§‹æ’°å†™è®ºæ–‡
 The first thing that you need to do is to update the article's title and author information at the ```variables.tex```
 file.
 
 
-ĞŞ¸ÄÎÄ¼ş"variable.tex"ÖĞµÄÄÚÈİ£¬ÈçÏÂ£º
+ä¿®æ”¹æ–‡ä»¶"variable.tex"ä¸­çš„å†…å®¹ï¼Œå¦‚ä¸‹ï¼š
 
 ```latex
 % Article Title
@@ -49,7 +49,7 @@ file.
 % Author name
 \def \AuthorA{Your Name}
 
-%Ò»°ã£¬ÒÔÏÂÄÚÈİ²»ĞèÒªĞŞ¸Ä£º
+%ä¸€èˆ¬ï¼Œä»¥ä¸‹å†…å®¹ä¸éœ€è¦ä¿®æ”¹ï¼š
 % Author(s) Email(s)
 \def \AuthorAemail{cuiziqiang@tju.edu.cn}
 
@@ -64,7 +64,7 @@ have multiple authors/institutions is available at ``IEEEtran_HOWTO.pdf``.
 
 
 
-%ÒÔÏÂ£¬¿ÉÍ¨¹ı±à¼­Ïà¹ØÎÄ¼şĞŞ¸ÄÕªÒª¡¢¹Ø¼ü´ÊºÍÕıÎÄ¡£
+%ä»¥ä¸‹ï¼Œå¯é€šè¿‡ç¼–è¾‘ç›¸å…³æ–‡ä»¶ä¿®æ”¹æ‘˜è¦ã€å…³é”®è¯å’Œæ­£æ–‡ã€‚
 
 ### Abstract
 The file for the article abstract are located in  ```abstract/abstract.tex```. To define your abstract
@@ -141,7 +141,7 @@ The full documentation of the ```acronyms``` package is available at [LaTeX Glos
 
 
 
-## ±àÒë
+## ç¼–è¯‘
 
 
 You have some ways to create the final pdf:
@@ -151,9 +151,9 @@ It depends on the text editor you are using.
 If you are using Atom and the LaTeX plugin, just press
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
 
-### Ê¹ÓÃ½Å±¾
-½Å±¾ÊÇÒ»ÖÖ¸ßĞ§µÄ¹¤×÷·½Ê½£¬»¯·±Îª¼ò¡£ÔÚWindsowsÏÂ£¬ĞèÒª°²×°gitÈí¼ş£¨https://gitforwindows.org/£©£¬Ö±½ÓË«»÷¼´¿ÉÔËĞĞ¡£
-½¨Òé£ºÃ¿´ÎÔÚÌá½»£¨commit£©Ç°£¬ÔËĞĞÒ»´ÎtoPDF.sh ºÍ clean.sh¡£
+### ä½¿ç”¨è„šæœ¬
+è„šæœ¬æ˜¯ä¸€ç§é«˜æ•ˆçš„å·¥ä½œæ–¹å¼ï¼ŒåŒ–ç¹ä¸ºç®€ã€‚åœ¨Windsowsä¸‹ï¼Œéœ€è¦å®‰è£…gitè½¯ä»¶ï¼ˆhttps://gitforwindows.org/ï¼‰ï¼Œç›´æ¥åŒå‡»å³å¯è¿è¡Œã€‚
+å»ºè®®ï¼šæ¯æ¬¡åœ¨æäº¤ï¼ˆcommitï¼‰å‰ï¼Œè¿è¡Œä¸€æ¬¡toPDF.sh å’Œ clean.shã€‚
 
 If you have the complete LateX environment installed, you can run the ```toPDF.sh``` script to generate the PDF (```article.pdf```):
 ```
