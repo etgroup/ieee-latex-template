@@ -4,8 +4,53 @@
 % Introduction
 \section{Introduction}
 \label{sec:introduction}
-Your introduction goes here \ldots \\
 
-This is an example in how to cite a bibliography entry \cite{cui2019} \\
+This is a well organized latex template for IEEE papers that can be used by  the graduate students to prepare the IEEE conference and journal papers. 
+
+
+
+\subsection{Titles}
+
+One can modify the author list, institution, address, correspondence email and title of paper in the file \verb+variables.tex+.
+
+
+\subsection{Keywords and abstract}
+The keywords and abstract can be modified in the files \verb+keywords.tex+ and \verb+abstract.tex+, respectively.
+
+
+\subsection{Acronym}
+
+Prior to use the acronyms, one needs to add the acronym into the file \verb+/acronym/acronym.tex+. 
+To refer an acronym, use the \LaTeX  command \verb+\gls{}+. 
 
 This is an example in how to referring an acronym \gls{IEEE}
+
+\gls{ECT}, \gls{ERT} and \gls{EMT} are three different electrical tomography modalities \ldots
+
+
+\subsection{Math formula}
+
+Some frequently used formulas can be found in \verb+math.tex+. 
+To refer a formula, use the corresponding command. 
+For example, we can write the Maxwell equations in 
+
+\begin{equation}\label{eq:maxwell}
+  \maxwell
+\end{equation}
+
+And, the signal-to-noise ratio can be expressed as:
+
+\begin{equation}\label{eq:snr}
+  \snr
+\end{equation}
+
+Also, one can use the image correlation coefficient to evaluate the image quality, \emph{i.e.},
+
+
+\begin{equation}\label{eq:corr}
+  \corrcoe
+\end{equation}
+
+\subsection{Citations}
+
+This is an example in how to cite a bibliography entry \cite{cao2018} \\

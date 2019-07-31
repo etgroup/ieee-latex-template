@@ -1,0 +1,82 @@
+\newcommand{\maxwell}
+{
+\begin{array}{rl}
+\nabla\times {\mathbf{E}}&=-\frac{\partial {\mathbf{B}}}{\partial t}  \\
+\nabla\times {\mathbf{H}}&={\mathbf{J}}+\frac{\partial {\mathbf{D}}}{\partial t}  \\
+\nabla\cdot {\mathbf{B}}&=0  \\
+\nabla\cdot {\mathbf{D}}&=\rho  \\
+\end{array}
+}
+
+
+\newcommand{\maxwella}
+{
+\left\{
+ \begin{array}{rl}
+ {\mathbf{B}}&=\mu {\mathbf{H}}  \\
+ {\mathbf{D}}&=\varepsilon {\mathbf{E}}  \\
+ {\mathbf{J}}&=\sigma {\mathbf{E}}  \\
+ \end{array}
+\right.
+}
+
+
+\newcommand{\ect}
+{
+ \nabla \cdot\left[(\varepsilon )\nabla \varphi \right]=0
+}
+
+\newcommand{\ecrt}
+{
+ \nabla \cdot\left[(\sigma +j\omega \varepsilon )\nabla \varphi \right]=0
+}
+
+\newcommand{\ectb}
+{
+\left\{
+\begin{array}{rl}
+    \varphi_{\Gamma_e}&=V_e\\
+    \varphi_{\Gamma_m}&=0\\
+    \varphi_{\Gamma_{s}}&=0\\
+\end{array}
+\right.
+}
+
+
+\newcommand{\capacitance}
+{C=\frac{Q}{V_e}=-\frac{1}{V_e}\int_{\Omega_m}\varepsilon(x,y,z)\nabla\varphi(x,y,z) d\Omega}
+
+\newcommand{\emt}
+{
+\nabla\times \left[\left(\nabla \times \frac{\mathbf{B}}{\mu}\right)/\sigma\right]=-j\omega \mathbf{B}
+}
+
+\newcommand{\emta}
+{
+\nabla^2\mathbf{A}+j\omega\mu\sigma \mathbf{A}=\mu \mathbf{J}
+}
+
+
+\newcommand{\deltaz}
+{
+\Delta Z &=& \frac{1}{I^2}\int_{\Omega}j\omega(\mu_x-\mu_0)\mathbf{H}_x\cdot\mathbf{H}_0 \nonumber\\
+&&-(\sigma_x-\sigma_0+j\omega\varepsilon_x-j\omega\varepsilon_0)\mathbf{E}_x\cdot\mathbf{E}_0 d\Omega
+}
+
+
+\newcommand{\snr}
+{
+\mathbf{SNR} = -20\lg\left[\frac{1}{\mu}\sqrt{\frac{1}{n}\sum\limits_{i=1}^{n}(x_i-\mu)^{2}}\right]
+}
+
+
+\newcommand{\snrd}
+{
+\mathbf{SNR_\Delta} = -20\lg\left[\frac{1}{|\mu_h-\mu_l|}\sqrt{\frac{1}{n}\sum\limits_{i=1}^{n}(x_i-\mu_h)^{2}}\right]
+  \label{eq:snr}
+}
+
+\newcommand{\corrcoe}
+{
+    r=\frac{\sum_{i=1}^{N}\left(\hat{\mathbf{g}}_{i}-\overline{\hat{\mathbf{g}}}\right)\left(\mathbf{g}_{i}-\overline{\mathbf{g}}\right)}{\sqrt{\sum_{i=1}^{N}\left(\hat{\mathbf{g}}_{i}-\overline{\hat{\mathbf{g}}}\right)^{2} \sum_{i=1}^{N}\left(\mathbf{g}_{i}-\overline{\mathbf{g}}\right)^{2}}}
+}
