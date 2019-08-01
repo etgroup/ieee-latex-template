@@ -144,7 +144,7 @@ If you are using Atom and the LaTeX plugin, just press
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
 
 ### 使用脚本
-脚本是一种高效的工作方式，化繁为简。在Windsows下，需要安装git软件（https://gitforwindows.org/），直接双击即可运行。
+脚本是一种高效的工作方式，化繁为简。在Windsows下，需要安装git软件（https://gitforwindows.org/）, 直接双击即可运行。
 建议：每次在提交（commit）前，运行一次toPDF.sh 和 clean.sh。
 
 If you have the complete LateX environment installed, you can run the ```toPDF.sh``` script to generate the PDF (```article.pdf```):
