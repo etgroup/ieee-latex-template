@@ -6,22 +6,53 @@
 % ------------------------------------------
 \documentclass[journal,twocolumn,letterpaper,10pt]{ieee-sty/IEEEtran}
 \usepackage[acronym]{glossaries}
+\usepackage{lineno,hyperref}
+
+%\usepackage{cite}
+%\usepackage{xcolor}
+%\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+%\usepackage{graphicx}
+%\usepackage{subfigure}
+%\usepackage{multirow}
+%\usepackage{array}
+%\usepackage{stfloats}
+%\usepackage{textcomp}
+%\usepackage{tikz}
+%
+%\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+%\usetikzlibrary{graphs,arrows}
+
+\usepackage[textsize=small,backgroundcolor=white]{todonotes}
+\newcounter{Exe}
+\newcommand{\mar}[1]{\refstepcounter{Exe} \textcolor[rgb]{1.00,0.00,0.00}{\todo[inline]{\textbf{Major revision \#\arabic{Exe}}: #1}}}
+\newcommand{\mir}[1]{\refstepcounter{Exe} \textcolor[rgb]{0.00,0.00,1.00}{\todo[inline]{\textbf{Minor revision \#\arabic{Exe}}: #1}}}
+
+
 
 % Generates the acronyms list
 \makeglossaries
 
+
+
+
+
 % Acronyms list
 \input{acronyms/acronyms.tex}
+
+
 
 % ------------------------------------------
 %  MAIN DOCUMENT
 % ------------------------------------------
 \begin{document}
 
+
+
 % Variables file
 \input{variables.tex}
 
-% frequently used formulas 
+% frequently used formulas
 \input{math.tex}
 
 % Article title
@@ -34,21 +65,28 @@
 \maketitle
 
 % Abstract
-\input{abstract/abstract.tex}
+\begin{abstract}
+Your abstract goes here \ldots
+\end{abstract}
+
 
 % Keywords
-\input{keywords/keywords.tex}
+\begin{IEEEkeywords}
+Article, IEEE, template
+\end{IEEEkeywords}
+
 
 % Sections
 \input{sections/sec_intro.tex}
-\input{sections/main.tex}
+\input{sections/sec_method.tex}
+\input{sections/sec_results.tex}
 \input{sections/sec_cons.tex}
 
 \if\hasBibliography 1
 % Bibliography
 \bibliographystyle{IEEEtran}
 % Bibliography file
-\bibliography{bibliography/article}
+\bibliography{bib}
 \fi
 
 \end{document}

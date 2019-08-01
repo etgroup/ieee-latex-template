@@ -5,7 +5,7 @@
 \section{Introduction}
 \label{sec:introduction}
 
-This is a well organized latex template for IEEE papers that can be used by  the graduate students to prepare the IEEE conference and journal papers. 
+This is a well organized \LaTeX  template for the IEEE papers that can be used by  the graduate students to prepare the IEEE conference and journal papers.
 
 
 
@@ -20,19 +20,19 @@ The keywords and abstract can be modified in the files \verb+keywords.tex+ and \
 
 \subsection{Acronym}
 
-Prior to use the acronyms, one needs to add the acronym into the file \verb+/acronym/acronym.tex+. 
-To refer an acronym, use the \LaTeX  command \verb+\gls{}+. 
+Prior to use the acronyms, one needs to add the acronym into the file \verb+/acronym/acronym.tex+.
+To refer an acronym, use the \LaTeX  command \verb+\gls{}+.
 
-This is an example in how to referring an acronym \gls{IEEE}
+This is an example in how to referring an acronym \gls{IEEE}.
 
 \gls{ECT}, \gls{ERT} and \gls{EMT} are three different electrical tomography modalities \ldots
 
 
 \subsection{Math formula}
 
-Some frequently used formulas can be found in \verb+math.tex+. 
-To refer a formula, use the corresponding command. 
-For example, we can write the Maxwell equations in 
+Some frequently used formulas can be found in the file \verb+math.tex+.
+To refer a formula, use the corresponding command.
+For example, we can write the Maxwell equations in
 
 \begin{equation}\label{eq:maxwell}
   \maxwell
@@ -51,6 +51,15 @@ Also, one can use the image correlation coefficient to evaluate the image qualit
   \corrcoe
 \end{equation}
 
-\subsection{Citations}
+\subsection{Bibliography}
 
-This is an example in how to cite a bibliography entry \cite{cao2018} \\
+We can use the Jabref software to manage the bibliography.
+The file \verb+bib.bib+ can be used as a common library to add references to the manuscript.
+
+\begin{itemize}
+  \item Add BibTeX Entry: On the website (https://ieeexplore.ieee.org), click the button ``Download citations'' and choose output format ``BibTeX''. Copy the text and paste it into the file \verb+bib.bib+ by using Jabref (New BibTeX entry, BibTeX source).    
+  \item Merge Multiple Bibliography files: In Jabref, Import into current library, Deselect all duplicates, Save. 
+  \item Insert Citations: This is an example in how to cite a bibliography entry \cite{cao2018, cui2019}.
+\end{itemize}
+
+
