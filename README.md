@@ -2,7 +2,7 @@
 
 ## 说明
 
-** 在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。使用该模板时，可通过Github的fork功能，或直接复制本repo。 **
+在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。使用该模板时，可通过Github的fork功能，再改名repo。 
 
 <span>
 <!-- LaTeX Logo -->
