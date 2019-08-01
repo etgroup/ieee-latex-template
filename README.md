@@ -66,39 +66,33 @@ have multiple authors/institutions is available at ``IEEEtran_HOWTO.pdf``.
 %以下，可通过编辑相关文件修改摘要、关键词和正文。
 
 ### Abstract
-The file for the article abstract are located in  ```abstract/abstract.tex```. To define your abstract
-just edit that file.
-
 ### Keywords
-The file for the article keywords are located in  ```keywords/keywords.tex```. To define your keywords
-just edit that file.
+
 
 ### Sections
 Sections are located at ```sections```folder.
-To create a new section, you first need to create a file in this folder.
-The easiest way to do this, is to create a new file file:
+Initially, there are multiple files in this folder, i.e.
 
-```sh
-$ touch sections/your_section_name.tex
-```
+```sections/sec_intro.tex```
+```sections/sec_method.tex```
+```sections/sec_results.tex```
+```sections/sec_cons.tex```
 
-In the new file, change the section's title and label.
-
-Now you just need to include this new section in the main file in ```section``` folder.
-Open ```section/main.tex``` file and add the include for the new section:
+In the file ```article.tex```, the aforementioned tex files are organized as below 
 
 ```latex
-\input{sections/your_section_name}
+\input{section/sec_intro.tex}
+\input{section/sec_method.tex}
 ```
-
 Now get to work and start writing your article.
+
 
 ### Figures
 Image files go to ```figures``` directory.
 Place your files here and include them in the body of your document.
 
 ### Bibliography
-The bibliography is in a ``.bib`` file located at ```bibliography/article.bib```.
+The bibliography is in a ``.bib`` file located at ```bib.bib```.
 
 The IEEEtran specification requires that to print the article bibliography you must have at least
 one citation in you document, otherwise you will get a compilation error. To fix that issue we
@@ -109,8 +103,7 @@ define the ``hasBibliography`` variable that us located at the variables file:
 ```
 The default value specifies that the bibliography must be generated. If you don't want, just that change the variable value to 0.
 
-To cite a bibliography entry in your document you can use the following command, as demonstrated
-in ```sections/introduction.tex```:
+To cite a bibliography entry in your document you can use the following command:
 
 ```latex
 \cite{johndoe}
