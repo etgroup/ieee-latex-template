@@ -6,7 +6,7 @@
 % Author(s) Name(s)
 \def \AuthorA{
     Ziqiang~Cui,~\IEEEmembership{Member,~IEEE,}
-    Graduate~Students~Name, 
+    \GSAuthor,
     Huaxiang~Wang,~\IEEEmembership{Senior~Member,~IEEE}% <-this % stops a space
 \thanks{This research is financially supported by NSFC, Nos. 61671319 and 61627803.}% <-this % stops a space
 \thanks{Manuscript received August 19, 2019; revised August 26, 2019.}}
@@ -22,8 +22,12 @@ Tianjin University, Tianjin 300072, China}
 % Article Title
 \newcommand {\Title} {\ArticleTitle}
 
+
+
 % Authors
 \newcommand {\Authors} {\IEEEauthorblockN{\AuthorA}}
+\newcommand {\GSAuthor} {Graduate~Students}
+
 
 % Institution
 \newcommand {\Institutions} {\IEEEauthorblockA{\InstitutionA}\\
