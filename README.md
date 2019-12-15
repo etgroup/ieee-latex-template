@@ -4,62 +4,32 @@
 
 在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。使用该模板时，可通过Github网页上的“Use this template”。
 
-<span>
-<!-- LaTeX Logo -->
-<img src="/figures/latex.png" width="200px" height="auto" hspace="20"/>
-<!-- IEEE Logo -->
-<img src="/figures/Ieee.jpg" width="200px" height="auto" hspace="20"/>
-</span>
-
-IEEEtran compliant LaTeX template. This document follows the official documentation provided at
-the [IEEE](https://www.ieee.org/publications_standards/publications/authors/author_templates.html) and
-the documentation developed by Michael Shell, the IEEEtran original author that provided a guide
-``IEEEtran_HOWTO.pdf`` with all information needed to produce an IEEE compliant article in LateX.
-
-The default configurations for this template are:
-
-```latex
-\documentclass[journal,twocolumn,letterpaper,10pt]{IEEEtran}
-```
-## Requirements:
-* LateX: This will depend on your Operating System. You have to check how to install all Latex packages for your OS.
-* Any text editor that supports LateX (e.g. [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com/), [Emacs](https://www.gnu.org/software/emacs/), etc.)
-* LaTeX plugins for your text editor (this is optional, but it will make your life easier).
-I you use Atom (that is my case) the following ones are available:
-  * [language-latex](https://atom.io/packages/language-latex)
-  * [latex](https://atom.io/packages/latex)
-  * [latexer](https://atom.io/packages/latexer)
-
-## Usage
-To use this template, you can simply fork or copy this repository and start working on it.
 
 
 
-### Starting your Article -- 开始撰写论文
-The first thing that you need to do is to update the article's title and author information at the ```variables.tex```
+## Starting your Article -- 开始撰写论文
+The first thing that you need to do is to update the article's title and author information at the ```article.tex```
 file.
 
 
-修改文件"variable.tex"中的内容，如下：
+修改文件"article.tex"中的内容，如下：
 
 ```latex
-% Article Title
-\def \ArticleTitle{Your Article Title}
-% Author name
-\def \AuthorA{Your Name}
+\newcommand {\GSAuthor} {Graduate~Students}
 
-%一般，以下内容不需要修改：
-% Author(s) Email(s)
-\def \AuthorAemail{cuiziqiang@tju.edu.cn}
+% Author(s) Name(s)
+\def \AuthorA{
+    Ziqiang~Cui,~\IEEEmembership{Member,~IEEE,}
+    \GSAuthor,
+    Huaxiang~Wang,~\IEEEmembership{Senior~Member,~IEEE}% <-this % stops a space
+\thanks{This research is financially supported by NSFC, Nos. 61671319 and 61627803.}% <-this % stops a space
+\thanks{Manuscript received August 19, 2019; revised August 26, 2019.}}
 
-% Institution(s) Name(s)
-\def \InstitutionA{\textit{Tianjin Key Laboratory of Process Measurement and Control} \\
-\textit{School of Electrical and Information Engineering}\\
-Tianjin University, Tianjin 300072, China}
+% Article title
+\title{My First IEEE Paper}
+
 ```
-If you article has multiple authors and/or institutions, you must edit this information at ```variables.tex```
-file by defining new variables and updating the respective commands. The information regarding how to
-have multiple authors/institutions is available at ``IEEEtran_HOWTO.pdf``.
+
 
 
 
