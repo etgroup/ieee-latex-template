@@ -11,7 +11,7 @@ This is a well organized \LaTeX  template for the IEEE papers that can be used b
 
 \subsection{Titles}
 
-One can modify the author list, institution, address, correspondence email and title of paper in the file \verb+article.tex+.
+One can modify the author list, institution, address, correspondence email and title of paper in the file \verb+variables.tex+ and \verb+article.tex+.
 
 
 \subsection{Keywords and abstract}
@@ -57,8 +57,8 @@ We can use the Jabref software to manage the bibliography.
 The file \verb+bib.bib+ can be used as a common library to add references to the manuscript.
 
 \begin{itemize}
-  \item Add BibTeX Entry: On the website (https://ieeexplore.ieee.org), click the button ``Download citations'' and choose output format ``BibTeX''. Copy the text and paste it into the file \verb+bib.bib+ by using Jabref (New BibTeX entry, BibTeX source).
-  \item Merge Multiple Bibliography files: In Jabref, Import into current library, Deselect all duplicates, Save.
+  \item Add BibTeX Entry: On the website (https://ieeexplore.ieee.org), click the button ``Download citations'' and choose output format ``BibTeX''. Copy the text and paste it into the file \verb+bib.bib+ by using Jabref (New BibTeX entry, BibTeX source).    
+  \item Merge Multiple Bibliography files: In Jabref, Import into current library, Deselect all duplicates, Save. 
   \item Insert Citations: This is an example in how to cite a bibliography entry \cite{cao2018, cui2019}.
 \end{itemize}
 
