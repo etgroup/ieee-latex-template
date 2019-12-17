@@ -6,7 +6,10 @@
 
 ## 文件夹的使用
 
-论文用图的生成文件，如pdf、jpg、png、eps等，都放置于figure/下，要求：单个文件不超过5MB；论文用图的源文件及各种数据文件，如visio、mp、excel、mat等，都放置在exclude文件夹下。注意：exclude内的文件不应出现在latex中，此目录已经加在.gitignore文件中，不会同步到github上。这样做是为避免repo过大。
+1. 论文用图的生成文件，如pdf、jpg、png、eps等，都放置于figure/下，要求：单个文件不超过5MB；
+2. 论文用图的源文件及各种数据文件，如visio、mp、excel、mat等，都放置在exclude文件夹下。
+
+注意：exclude内的文件不应出现在latex中，此目录已经加在.gitignore文件中，不会同步到github上。这样做是为避免repo过大。
 
 
 ## Starting your Article -- 开始撰写论文
@@ -107,15 +110,10 @@ The full documentation of the ```acronyms``` package is available at [LaTeX Glos
 
 ## 编译
 
+对于使用CTex软件来说，使用Winedt中的pdflatex编译即可。
 
-You have some ways to create the final pdf:
+## 使用脚本
 
-### Using the text editor
-It depends on the text editor you are using.
-If you are using Atom and the LaTeX plugin, just press
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
-
-### 使用脚本
 脚本是一种高效的工作方式，化繁为简。在Windsows下，需要安装git软件（https://gitforwindows.org/）, 直接双击即可运行。
 建议：每次在提交（commit）前，运行一次toPDF.sh 和 clean.sh。
 
@@ -128,4 +126,8 @@ To clean the files generated at the compilation process, you can run ```clean.sh
 ```
 $ sh clean.sh
 ```
+## 检查论文格式
+
+具体参考：
+https://github.com/etgroup/paper_checklist
 
