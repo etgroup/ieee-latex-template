@@ -34,3 +34,4 @@
 article.pdf
 *.fls
 node_modules
+exclude
