@@ -2,9 +2,8 @@
 
 ## 说明
 
-在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。使用该模板时，可通过Github网页上的“Use this template”。
-
-
+### 在Github上偶然发现的一个IEEE模板，使用方便，暂定为实验室通用的论文模板。使用该模板时，可通过Github网页上的“Use this template”。
+### 文件夹的使用：论文用图的生成文件，如pdf、jpg、png、eps等，都放置于figure/下，要求：单个文件不超过5MB；论文用图的源文件及各种数据文件，如visio、mp、excel、mat等，都放置在exclude文件夹下。注意：exclude内的文件不应出现在latex中，此目录已经加在.gitignore文件中，不会同步到github上。这样做是为避免repo过大。
 
 
 ## Starting your Article -- 开始撰写论文
