@@ -6,8 +6,10 @@
 
 ## 文件夹的使用
 
-1. 论文用图的生成文件，如pdf、jpg、png、eps等，都放置于figure/下，要求：单个文件不超过5MB；
-2. 论文用图的源文件及各种数据文件，如visio、mp、excel、mat等，都放置在exclude文件夹下。
+为避免REPO文件过大，对文件夹的使用做以下约定：
+
+1. 论文直接用到的图像文件，如pdf、jpg、png、eps等，才可以放置于figure/下，且要求：单个文件不超过5MB；
+2. 论文用图的源文件及各种数据文件，如visio、mp、excel、mat等，都放置在根目录的exclude文件夹下。
 
 注意：exclude内的文件不应出现在latex中，此目录已经加在.gitignore文件中，不会同步到github上。这样做是为避免repo过大。
 
